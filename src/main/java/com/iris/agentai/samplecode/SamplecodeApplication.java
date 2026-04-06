@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SamplecodeApplication {
 
 	public static void main(String[] args) {
-		System.out.println("mohit");
 		SpringApplication.run(SamplecodeApplication.class, args);
 	}
 
