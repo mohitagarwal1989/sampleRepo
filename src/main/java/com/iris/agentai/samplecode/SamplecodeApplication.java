@@ -13,9 +13,15 @@ public class SamplecodeApplication {
 
 	public static void main(String[] args) {
 		logger.info("In main method");
-		int a= 0;
-		int b= 10;
-		int cal = b/a;
+		int a = 0;
+		int b = 10;
+
+		if (a != 0) {
+			int cal = b / a;
+			logger.info("Division result: {}", cal);
+		} else {
+			logger.warn("Divisor 'a' is zero; division skipped to avoid ArithmeticException.");
+		}
 
 		SpringApplication.run(SamplecodeApplication.class, args);
 	}
