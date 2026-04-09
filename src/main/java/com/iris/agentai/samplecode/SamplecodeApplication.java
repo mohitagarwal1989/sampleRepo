@@ -13,9 +13,15 @@ public class SamplecodeApplication {
 
 	public static void main(String[] args) {
 		logger.info("In main method");
-		int a= 0;
-		int b= 10;
-		int cal = b/a;
+		int a = 0;
+		int b = 10;
+
+		if (a == 0) {
+			logger.error("Cannot perform division: divisor 'a' is zero.");
+		} else {
+			int cal = b / a;
+			logger.info("Division result: {}", cal);
+		}
 
 		SpringApplication.run(SamplecodeApplication.class, args);
 	}
